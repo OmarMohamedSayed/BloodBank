@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_menue">
+
+    <RelativeLayout
+        android:layout_width="388dp"
+        android:layout_height="515dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="94dp"
+            android:layout_height="90dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/SearchDonor"
+            android:layout_marginEnd="25dp"
+            app:srcCompat="@drawable/s" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="85dp"
+            android:layout_height="91dp"
+            android:layout_alignEnd="@+id/imageView6"
+            android:layout_alignTop="@+id/MyDetails"
+            app:srcCompat="@drawable/details" />
+
+        <Button
+            android:id="@+id/SearchDonor"
+            android:layout_width="235dp"
+            android:layout_height="92dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="69dp"
+            android:background="#f8f8f8"
+            android:text="Search Donor" />
+
+        <Button
+            android:id="@+id/MyDetails"
+            android:layout_width="225dp"
+            android:layout_height="86dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/SearchDonor"
+            android:layout_marginBottom="60dp"
+            android:background="#f8f8f8"
+            android:text="My Details" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

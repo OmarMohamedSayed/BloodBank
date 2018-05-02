@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ll</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    // progress bar color
+
+    <style name="ProgressColor">
+        <item name="colorAccent">
+            @color/ProgressBar
+        </item>
+
+    </style>
+
+    <style name="textstyle">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#FF2D2D2D</item>
+        <item name="android:layout_marginBottom"></item>
+
+
+
+    </style>
+
+</resources>

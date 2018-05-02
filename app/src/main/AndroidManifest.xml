@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bloodbank.bloodbank">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainPage"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewActivity"
+            android:parentActivityName=".Search_Donor"/>
+        <activity
+            android:name=".LoginPage"
+            android:exported="true"
+            android:label="Home" />
+        <activity
+            android:name=".Registration"
+            android:label="Resistration"
+            android:parentActivityName=".LoginPage"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Main_menue"
+            android:label="Main menue"
+            android:parentActivityName=".LoginPage" />
+        <activity
+            android:name=".Search_Donor"
+            android:label="Search Donor"
+            android:parentActivityName=".Main_menue" />
+        <activity
+            android:name=".Blood_Bank"
+            android:label="Blood Bank"
+            android:parentActivityName=".Main_menue" />
+
+
+        <activity android:name=".My_details"  android:label="My Details"
+            android:parentActivityName=".Main_menue"></activity>
+    </application>
+
+</manifest>
